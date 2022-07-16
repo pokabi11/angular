@@ -1,0 +1,33 @@
+<h1 style="color: blueviolet">classroom stuff for {{data.className}}</h1>
+<h2 style="color: green">current status: {{data.classStatus}}</h2>
+<input type="text" [(ngModel)]="data.className" placeholder="Change className"/>
+<button type="button" (click)="changeNameClass()">reset to T2204M</button>
+
+<app-student *ngFor="let sv of studentArray"
+             [data]="sv">
+</app-student>
+
+
+
+<h2 style="color: red;">Trạng thái hoạt động của lớp:
+  <span *ngIf="data.classStatus">Active</span>
+  <span *ngIf="!data.classStatus">Inactive</span>
+</h2>
+
+<button type="button" (click)="changeStatus()">statusToggle</button>
+
+<h2>Teacher list:
+  <ol>
+    <li *ngFor="let t of teacherNames;let i=index;">
+      {{teacherNames[i]}}
+    </li>
+  </ol>
+</h2>
+
+<h2>Subject list:
+  <ol>
+    <li *ngFor="let s of subjectNames">
+      {{s}}
+    </li>
+  </ol>
+</h2>
