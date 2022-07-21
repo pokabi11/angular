@@ -1,0 +1,19 @@
+<h1>Đây là thông tin thời tiết hôm nay:</h1>
+<div *ngIf="data">
+  <h1 style="color: blueviolet">{{data.name+ ',' + data.sys.country}}</h1>
+  <h2 style="color: crimson">Temp: {{data.main.temp}}</h2>
+  <h2 style="color: darkblue">Humidity: {{data.main.humidity}}</h2>
+  <h2 style="color: green">Pressure: {{data.main.pressure}}</h2>
+</div>
+<h2>chọn vùng:</h2>
+<select [(ngModel)]="cityCode" (click)="changeCity()">
+  <option value="hanoi">Hà Nội</option>
+  <option value="saigon">Sài Gòn</option>
+  <option value="london">London</option>
+  <option value="new york">New York</option>
+  <option value="berlin">Berlin</option>
+</select><br/>
+
+<input type="text" [(ngModel)]="cityCode" placeholder="put location name here"/>
+<button type="button" (click)="changeCity()">change location</button>
+<app-weatherforcast [data]="forecast"></app-weatherforcast>
