@@ -17,7 +17,9 @@ const appRoutes: Routes = [
   {path:'',component: CurrentweatherComponent},
   {path: 'about-us',component:AboutusComponent},
   {path:'signin',component:SigninComponent},
-  {path:'signup',component:SignupComponent'}
+  {path:'signup',component:SignupComponent},
+  {path: 'signin/signup',   redirectTo: 'signup', pathMatch: 'full' }
+
 ]
 
 
@@ -28,7 +30,9 @@ const appRoutes: Routes = [
     ClassroomComponent,
     CurrentweatherComponent,
     WeatherforecastComponent,
-    AboutusComponent
+    AboutusComponent,
+    SignupComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,FormsModule,HttpClientModule,
