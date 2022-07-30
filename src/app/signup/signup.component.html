@@ -1,42 +1,80 @@
-<body style="background: rgb(60,145,255);
-background: linear-gradient(90deg, rgba(60,145,255,1) 0%, rgba(82,82,200,1) 47%, rgba(255,155,155,1) 100%);">
+<body>
 <section class="section">
+  <ul id="testid" class="" style="position: fixed;">
+    <li style="--i:#9055ff;--j:#ed7b84;">
+      <span class="icon"></span><svg class="bi" width="16" height="16"><use xlink:href="assets/bootstrap-icons-1.9.0/bootstrap-icons.svg#chevron-left"/></svg>
+      <a routerLink="signin" class="title">Đăng nhập</a>
+    </li>
+  </ul>
   <div class="container-sm">
     <form class="w-50 mx-auto bg-light rounded-3">
+
       <div class="my-4 pt-4">
-        <h2 class="text-center">Signup</h2>
+        <h2 class="text-center">Đăng kí</h2>
         <hr>
       </div>
       <div class="px-4 pb-3">
-        <input type="text" class="form-control border-bottom" placeholder="First Name">
+        <input type="text" class="form-control border-bottom" placeholder="Họ và tên đệm">
       </div>
       <div class="px-4 pb-3">
-        <input type="text" class="form-control border-bottom" placeholder="Last Name">
+        <input type="text" class="form-control border-bottom" placeholder="Tên">
+      </div>
+      <div class="d-flex px-4 pb-3">
+        <input type="text" class="form-control border-bottom" placeholder="Sinh nhật" disabled>
+        <input type="date" class="form-control border-bottom">
       </div>
       <div class="px-4 pb-3">
         <input type="text" class="form-control border-bottom" placeholder="Email">
       </div>
       <div class="px-4 pb-3">
-        <input type="text" class="form-control border-bottom" placeholder="Username">
+        <input type="text" class="form-control border-bottom" placeholder="Số điên thoại">
       </div>
       <div class="px-4 pb-3">
-        <input type="password" class="form-control border-bottom" placeholder="Password">
+        <input type="text" class="form-control border-bottom" placeholder="Tên tài khoản">
       </div>
       <div class="px-4 pb-3">
-        <input type="password" class="form-control border-bottom" placeholder="Repeat your Password">
+        <input type="password" class="form-control border-bottom" placeholder="Mật khẩu">
       </div>
       <div class="px-4 pb-3">
-        <input type="checkbox" class="me-1"><span>I Argree with all the terms</span>
+        <input type="password" class="form-control border-bottom" placeholder="Nhập lại mật khẩu">
       </div>
+      <div class="px-4 pb-3">
+        <input type="checkbox" class="me-1"><span>Tôi đồng ý với mọi </span><a href="" data-bs-toggle="modal" data-bs-target="#term1">điều khoản của BiCorp</a>
+      </div>
+      <div class="modal fade" id="term1" tabindex="-1" aria-labelledby="term1Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="term1Label">Điều khoản dành cho người dùng</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container-sm">
+                <p>Mẫu điều khoản đang được cập nhật thêm</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi doloribus dolorum ex
+                  exercitationem explicabo incidunt, nam nisi nostrum perferendis qui quia quo repudiandae, suscipit
+                  tenetur veritatis vero, vitae? Inventore.</p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <input type="checkbox" class="me-1"><span>Tôi đồng ý với điều khoản</span>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+              <button type="button" class="btn btn-primary">Lưu thay đổi</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="px-4 py-1">
-        <input type="checkbox" class="me-1"><span>I would like you recive the notifications of blab blab blab via Email</span>
+        <input type="checkbox" class="me-1"><span>Tôi mong nhận được thông báo về các ưu đãi của BiCorp qua thư điện tử</span>
       </div>
 
       <div class="d-grid gap2 px-4 py-3 ">
-        <button class="btn btn-primary rounded-5">Register new user</button>
+        <button class="btn btn-primary rounded-5"><a routerLink="signin" class="text-white" style="text-decoration: none">Đăng kí !</a></button>
       </div>
     </form>
   </div>
 </section>
 
 </body>
+

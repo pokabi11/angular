@@ -1,27 +1,34 @@
 <section class="section">
+  <ul id="testid" class="" style="position: fixed;">
+    <li style="--i:#9055ff;--j:#ed7b84;">
+      <span class="icon"></span><svg class="bi" width="16" height="16"><use xlink:href="assets/bootstrap-icons-1.9.0/bootstrap-icons.svg#chevron-left"/></svg>
+      <a routerLink="" class="title">Trang chủ</a>
+    </li>
+  </ul>
   <div class="container-sm">
+
     <form class="w-50 mx-auto bg-light rounded-3">
       <div class="my-4 pt-4">
-        <h2 class="text-center">Login</h2>
+        <h2 class="text-center">Đăng nhập</h2>
         <hr>
       </div>
       <div class="px-4 pb-3">
-        <input type="text" class="form-control border-bottom" placeholder="Username">
+        <input type="text" class="form-control border-bottom" placeholder="Tên người dùng">
       </div>
       <div class="px-4 pb-3">
-        <input type="password" class="form-control border-bottom" placeholder="Password">
+        <input type="password" class="form-control border-bottom" placeholder="Mật khẩu">
       </div>
       <div class="px-4 pb-3">
-        <a href="#" class="text text-black-50 text-decoration-none">Forget Password</a>
+        <a routerLink="forgetpassword" class="text text-black-50 text-decoration-none">Quên mật khẩu</a>
       </div>
       <div class="d-grid gap2 px-4 pb-3 ">
-        <button class="btn btn-primary rounded-5">Login</button>
+        <button class="btn btn-primary rounded-5"><a router Link="/">Đăng nhập</a></button>
       </div>
       <div class="d-flex justify-content-center px-4 py-3">
-        <span class="pe-2">Not a member? </span>
-        <a routerLink="signup">Signup</a>
+        <span class="pe-2">Không phải là thành viên? </span>
+        <a routerLink="signup">Đăng kí ngay!</a>
       </div>
     </form>
   </div>
 </section>
-<router-outlet></router-outlet>
+

@@ -1,0 +1,231 @@
+
+<body>
+<header class="p-3 mb-3 border-bottom">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 me-4">
+        <img alt="logo" src="assets/images/bifood.png" height="43px">
+      </a>
+
+      <ul id="testid" class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <li style="--i:#9055ff;--j:#ed7b84;">
+          <span class="icon"></span><svg class="bi" width="16" height="16"><use xlink:href="assets/bootstrap-icons-1.9.0/bootstrap-icons.svg#house"/></svg>
+          <a routerLink="" class="title">Trang chủ</a>
+        </li>
+        <li style="--i:#30be96;--j:#402565;">
+          <span class="icon"></span><svg class="bi " width="16" height="16"><use xlink:href="assets/bootstrap-icons-1.9.0/bootstrap-icons.svg#bag-dash-fill"/></svg>
+          <a routerLink="products" class="title">Sản Phẩm</a>
+        </li>
+        <li style="--i:#ffcac9;--j:#727dfe;">
+          <span class="icon"></span><svg class="bi " width="16" height="16"><use xlink:href="assets/bootstrap-icons-1.9.0/bootstrap-icons.svg#newspaper"/></svg>
+          <a routerLink="news" class="title">Tin tức</a>
+        </li>
+        <li style="--i:#b2ffda;--j:#2f80ed;">
+          <span class="icon"></span><svg class="bi " width="16" height="16"><use xlink:href="assets/bootstrap-icons-1.9.0/bootstrap-icons.svg#lightbulb"/></svg>
+          <a routerLink="tips" class="title">Mẹo vặt</a>
+        </li>
+        <li style="--i:#ffa9c6;--j:#f434e2;">
+          <span class="icon"></span><svg class="bi " width="16" height="16"><use xlink:href="assets/bootstrap-icons-1.9.0/bootstrap-icons.svg#telephone"/></svg>
+          <a routerLink="contacts" class="title">Liên hệ</a>
+        </li>
+      </ul>
+
+      <form id="searchid" class="mb-3 mb-lg-0 me-lg-3 " role="search">
+        <input type="search" class="title form-control" placeholder="Tìm kiếm..." aria-label="Search">
+      </form>
+      <div class="flex-shrink-0 dropdown">
+        <a href="#" class="d-block ms-3 link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="assets/images/user.png" alt="mdo" width="32" height="32" class="rounded-circle">
+        </a>
+        <ul id="menuuser" class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+          <li>
+            <a class="dropdown-item rounded-3 d-flex gap-2 align-items-center" routerLink="ui">
+              <svg class="bi" width="16" height="16"><use xlink:href="assets/bootstrap-icons-1.9.0/bootstrap-icons.svg#person-lines-fill"/></svg>
+              Thông tin khách hàng
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item rounded-3 d-flex gap-2 align-items-center" href="#">
+              <svg class="bi" width="16" height="16"><use xlink:href="assets/bootstrap-icons-1.9.0/bootstrap-icons.svg#truck"/></svg>
+              Trạng thái ship hàng
+            </a>
+          </li>
+          <li><hr class="dropdown-divider"></li>
+          <li>
+            <a class="dropdown-item rounded-3 d-flex gap-2 align-items-center" routerLink="signin">
+              <svg class="bi" width="16" height="16"><use xlink:href="assets/bootstrap-icons-1.9.0/bootstrap-icons.svg#box-arrow-left"/></svg>
+              Đăng xuất
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<div class="container-sm pb-3">
+  <div class="d-grid gap-3" style="grid-template-columns: 1fr 2fr;">
+    <div class="section1 border rounded-3">
+      <div class="signmc mx-2 my-2 pt-3 pb-1 rounded-3">
+        <h5 class="fw-bold text-center">Tin mới nhất</h5>
+      </div>
+      <a class="mx-2 my-2 link-light d-block text-decoration-none" href="#">(17/07) Mùa hồng xiêm đầu vụ, mua ngay!</a>
+      <a class="mx-2 my-2 link-light d-block text-decoration-none" href="#">(17/07) Thanh long đã cập bến nhà BiFood!</a>
+      <a class="mx-2 my-2 link-light d-block text-decoration-none" href="#">(17/07) Bơ sáp sau hè nắng nóng.</a>
+      <a class="mx-2 my-2 link-light d-block text-decoration-none" href="#">(17/07) Đã nhập kho - Nhãn lồng Hưng Yên.</a>
+      <a class="mx-2 my-2 link-light d-block text-decoration-none" href="#">(17/07) Giải cứu nông sản, nhà máy thiếu nguyên liệu?</a>
+      <a class="mx-2 my-2 link-light d-block text-decoration-none" href="#">(17/07) Mua hàng ngay, ship nông sản tận tay!</a>
+    </div>
+    <!--        <div class="bg-light border rounded-3">-->
+    <div id="myCarousel" class="carousel slide bg-light border" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/images/background_end.jpg" width="100%" height="100%" style="filter: brightness(50%);">
+
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>BiFood</h1>
+              <p>Trang web bán nông sản tại Việt Nam!</p>
+              <p></p>
+              <p><a class="btn btn-lg btn-outline-light" href="#">Tìm hiểu thêm</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/auto-1.jpg" width="100%" height="100%" style="filter: brightness(50%);">
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Nông sản tươi ngon</h1>
+              <p>Được tuyển chọn từ khắp mọi miền Tổ Quốc, đa dạng về hàng hoá mẫu mã. Chất lượng tuyệt vời!</p>
+              <p><a class="btn btn-lg btn-outline-light" href="#">Tìm hiểu thêm</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/auto-2.jpg" width="100%" height="100%" style="filter: brightness(50%);">
+
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Mạng lưới nhà nông phủ khắp toàn quốc</h1>
+              <p>BiFood giúp kết nối nhanh chóng giữa nông thôn và thành thị, nông sản tươi ngay trong ngày!</p>
+              <p><a class="btn btn-lg btn-outline-light" routerLink="signin">Đăng kí ngay</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<footer class="text-center text-lg-start text-muted">
+  <div class="container-sm d-flex justify-content-center justify-content-lg-between pt-4">
+    <div class="d-none d-lg-block d-md-block me-5 fs-4">
+
+    </div>
+
+    <div class="">
+      <a href="https://fb.me/ibakop2001" class="me-4 text-reset text-decoration-none">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset text-decoration-none">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset text-decoration-none">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset text-decoration-none">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset text-decoration-none">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset text-decoration-none">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            <svg class="bi me-2" width="16" height="16"><use xlink:href="/libs/bootstrap-icons-1.9.0/bootstrap-icons.svg#person-lines-fill"/></svg>BiFood Corp.
+          </h6>
+          <p class="footerTextSmol">
+            BiFood Corp. là 1 startup do học viên của Fpt Academy International lập nên, hướng tới sự sáng tạo trong thế kỉ mới.
+          </p>
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Tài khoản
+          </h6>
+          <p>
+            <a href="ui" class="text-reset text-decoration-none">Thông tin cá nhân</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Tích điểm</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Giỏ Hàng</a>
+          </p>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Hỗ trợ
+          </h6>
+          <p>
+            <a href="terms" class="text-reset text-decoration-none">Điều khoản và quy định</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Chính sách người dùng</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Hình thức thanh toán</a>
+          </p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i> Ton That Thuyet St, Hanoi, VN</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@fpt.edu.vn
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 84 912 FPT EDU</p>
+          <p><i class="fas fa-print me-3"></i> + 84 FAX FPT EDU</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <div class="text-center p-3" style="background-color: rgba(255,255,255,0.6);">
+    von mir aus © 2022,
+    <a class="text-reset fw-bold text-decoration-none" href="https://fb.me/ibakop2001">alles Liebe und Gute für Dich</a>
+  </div>
+</footer>
+</body>

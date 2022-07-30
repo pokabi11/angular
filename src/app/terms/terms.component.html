@@ -1,0 +1,264 @@
+<body>
+<header class="p-3 mb-3 border-bottom">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 me-4">
+        <img alt="logo" src="assets/images/bifood.png" height="43px">
+      </a>
+
+      <ul id="testid" class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <li style="--i:#9055ff;--j:#ed7b84;">
+          <span class="icon"></span><svg class="bi" width="16" height="16"><use xlink:href="assets/bootstrap-icons-1.9.0/bootstrap-icons.svg#house"/></svg>
+          <a routerLink="" class="title">Trang chủ</a>
+        </li>
+        <li style="--i:#30be96;--j:#402565;">
+          <span class="icon"></span><svg class="bi " width="16" height="16"><use xlink:href="assets/bootstrap-icons-1.9.0/bootstrap-icons.svg#bag-dash-fill"/></svg>
+          <a routerLink="products" class="title">Sản Phẩm</a>
+        </li>
+        <li style="--i:#ffcac9;--j:#727dfe;">
+          <span class="icon"></span><svg class="bi " width="16" height="16"><use xlink:href="assets/bootstrap-icons-1.9.0/bootstrap-icons.svg#newspaper"/></svg>
+          <a routerLink="news" class="title">Tin tức</a>
+        </li>
+        <li style="--i:#b2ffda;--j:#2f80ed;">
+          <span class="icon"></span><svg class="bi " width="16" height="16"><use xlink:href="assets/bootstrap-icons-1.9.0/bootstrap-icons.svg#lightbulb"/></svg>
+          <a routerLink="tips" class="title">Mẹo vặt</a>
+        </li>
+        <li style="--i:#ffa9c6;--j:#f434e2;">
+          <span class="icon"></span><svg class="bi " width="16" height="16"><use xlink:href="assets/bootstrap-icons-1.9.0/bootstrap-icons.svg#telephone"/></svg>
+          <a routerLink="contacts" class="title">Liên hệ</a>
+        </li>
+      </ul>
+
+      <form id="searchid" class="mb-3 mb-lg-0 me-lg-3 " role="search">
+        <input type="search" class="title form-control" placeholder="Tìm kiếm..." aria-label="Search">
+      </form>
+      <div class="flex-shrink-0 dropdown">
+        <a href="#" class="d-block ms-3 link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="assets/images/user.png" alt="mdo" width="32" height="32" class="rounded-circle">
+        </a>
+        <ul id="menuuser" class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+          <li>
+            <a class="dropdown-item rounded-3 d-flex gap-2 align-items-center" routerLink="ui">
+              <svg class="bi" width="16" height="16"><use xlink:href="assets/bootstrap-icons-1.9.0/bootstrap-icons.svg#person-lines-fill"/></svg>
+              Thông tin khách hàng
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item rounded-3 d-flex gap-2 align-items-center" href="#">
+              <svg class="bi" width="16" height="16"><use xlink:href="assets/bootstrap-icons-1.9.0/bootstrap-icons.svg#truck"/></svg>
+              Trạng thái ship hàng
+            </a>
+          </li>
+          <li><hr class="dropdown-divider"></li>
+          <li>
+            <a class="dropdown-item rounded-3 d-flex gap-2 align-items-center" routerLink="signin">
+              <svg class="bi" width="16" height="16"><use xlink:href="assets/bootstrap-icons-1.9.0/bootstrap-icons.svg#box-arrow-left"/></svg>
+              Đăng xuất
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<div class="container-sm border rounded-3 pt-2 my-3" style="background-color:rgba(255,255,255,0.3)">
+  <div id="dv-1">
+    ĐIỀU KHOẢN DỊCH VỤ
+  </div>
+  <div class="d-flex align-items-start p-2 ">
+    <div class="col-3">
+      <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><h5>Giới Thiệu</h5></button>
+        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><h5>Quyền Riêng Tư</h5></button>
+        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><h5>Phản Hồi</h5></button>
+        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false"><h5>Đóng Góp Của Người Sử Dụng Đối Với Dịch Vụ</h5></button>
+      </div>
+    </div>
+    <div class="tab-content" id="v-pills-tabContent">
+      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0"><div class="dieu-khoan">
+
+        <ul>
+          <li>Chào mừng bạn đến cửa hàng BiFood
+            qua giao diện website .
+            Trước khi sử dụng Trang BiFood hoặc tạo tài khoản BiFood (“Tài Khoản”),
+            vui lòng đọc kỹ các Điều Khoản Dịch Vụ dưới đây để hiểu rõ quyền lợi và nghĩa vụ hợp pháp
+            của mình đối chúng tôi. “Dịch Vụ” chúng tôi cung cấp hoặc sẵn có bao gồm Trang BiFood, các
+            dịch vụ được cung cấp bởi Trang BiFood và tất cả các thông tin, đường dẫn,
+            tính năng, dữ liệu, văn bản, hình ảnh, biểu đồ, âm nhạc, âm thanh, video
+            hoặc các tài liệu khác có sẵn trên Trang BiFood hoặc các dịch vụ liên quan tính
+            năng, dữ liệu, văn bản, hình ảnh, biểu đồ, âm nhạc, âm thanh, video, tin nhắn, tags, nội dung
+            , chương trình đến Trang BiFood
+            . Bất kỳ tính năng mới nào được bổ sung hoặc mở rộng đối với Dịch Vụ đều thuộc
+            phạm vi điều chỉnh của Điều Khoản Dịch Vụ này. Điều Khoản Dịch Vụ này điều chỉnh việc bạn sử
+            dụng Dịch Vụ cung cấp bởi BiFood.</li>
+          <li>
+            Dịch Vụ bao gồm dịch vụ sàn giao dịch trực tuyến kết nối người tiêu dùng với người bán nhằm
+            mang đến cơ hội kinh doanh giữa người mua  và người bán.
+          </li>
+          <li>
+            Trước khi trở thành Người Sử Dụng của Trang BiFood, bạn cần đọc và chấp nhận mọi điều khoản và điều kiện được quy định
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+
+        PiFood coi trọng việc bảo mật thông tin của bạn. Để bảo vệ quyền lợi người dùng, PiFood cung cấp Chính Sách Bảo Mật tại PiFood để giải thích chi tiết các hoạt động bảo mật của PiFood. Vui lòng tham khảo Chính Sách Bảo Mật để biết cách thức PiFood thu thập và sử dụng thông tin liên quan đến Tài Khoản và/hoặc việc sử dụng Dịch Vụ của Người Sử Dụng (“Thông Tin Người Sử Dụng”). Điều Khoản Dịch Vụ này có liên quan mật thiết với Chính Sách Bảo Mật. Bằng cách sử dụng Dịch Vụ hoặc cung cấp thông tin trên Trang PiFood, Người Sử Dụng:
+        <ul>
+          <li> Cho phép PiFood thu thập, sử dụng, công bố và/hoặc xử lý các Nội Dung, dữ liệu cá nhân của bạn và Thông Tin Người Sử Dụng như được quy định trong Chính Sách Bảo Mật;</li>
+          <li>Đồng ý và công nhận rằng các thông tin được cung cấp trên Trang PiFood sẽ thuộc sở hữu chung của bạn và PiFood; </li>
+          <li>Sẽ không, dù là trực tiếp hay gián tiếp, tiết lộ các Thông Tin Người Sử Dụng cho bất kỳ bên thứ ba nào, hoặc bằng bất kỳ phương thức nào cho phép bất kỳ bên thứ ba nào được truy cập hoặc sử dụng Thông Tin Người Dùng của bạn.</li>
+        </ul>
+      </div>
+      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+        PiFood luôn đón nhận những thông tin và phản hồi từ phía Người Sử Dụng nhằm giúp BiCorp cải thiện chất lượng Dịch Vụ. Vui lòng xem thêm quy trình phản hồi của PiFood dưới đây:
+        <ul>
+          <li>        Phản hồi cần được thực hiện bằng văn bản qua email hoặc sử dụng mẫu phản hồi có sẵn trên ứng dụng.</li>
+
+          <li>       Tất cả các phản hồi ẩn danh đều không được chấp nhận.</li>
+
+          <li>       Người Sử Dụng liên quan đến phản hồi sẽ được thông báo đầy đủ và được tạo cơ hội cải thiện tình hình.</li>
+
+          <li>        Những phản hồi không rõ ràng và mang tính phỉ báng sẽ không được chấp nhận</li>
+        </ul>
+      </div>
+      <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
+        Khi gửi bất kỳ Nội Dung nào cho PiFood, bạn khẳng định và bảo đảm rằng bạn đã có đầy đủ
+        tất cả các quyền và/hoặc các chấp thuận cần thiết để cấp các quyền dưới đây cho PiFood.
+        Bạn cũng thừa nhận và đồng ý rằng bạn là người chịu trách nhiệm duy nhất đối với bất cứ
+        nội dung gì bạn đăng tải hoặc tạo sẵn trên hoặc qua Dịch Vụ, bao gồm trách nhiệm về độ
+        chính xác, độ tin cậy, tính nguyên bản, rõ ràng các quyền, tính tuân thủ pháp luật và
+        các giới hạn pháp lý liên quan đến bất kỳ Nội Dung đóng góp nào. Người Sử Dụng theo đây
+        cấp quyền cho PiFood và các bên kế thừa của PiFood, một cách liên tục, không hủy ngang,
+        mang tính toàn cầu, không độc quyền, không tiền bản quyền, có thể cấp quyền lại và có thể
+        chuyển giao, quyền sử dụng, sao chép, phân phối, tái bản, chuyển giao, thay đổi, chỉnh sửa,
+        tạo các sản phẩm phái sinh từ, thể hiện công khai, và thực hiện Nội Dung đóng góp đó, thông
+        qua hoặc liên quan đến Dịch Vụ dưới bất kỳ phương tiện truyền thông nào và thông qua bất kỳ
+        kênh truyền thông nào, bao gồm cho mục đích khuyến mãi hoặc phân phối lại một phần Dịch Vụ
+        (hoặc các sản phẩm phái sinh của Dịch Vụ). Quyền mà bạn trao cho chúng tôi chỉ chấm dứt khi
+        bạn hoặc PiFood loại bỏ Nội Dung đóng góp ra khỏi Dịch Vụ. Bạn hiểu rằng sự đóng góp của bạn
+        có thể được chuyển giao sang nhiều hệ thống khác nhau và được thay đổi để phù hợp và đáp
+        ứng các yêu cầu về kỹ thuật<br><br>
+        Bất kỳ Nội Dung, tài liệu, thông tin hoặc ý tưởng nào Người Sử Dụng đăng tải hoặc thông
+        qua Dịch Vụ, hoặc bằng cách khác chuyển giao cho PiFood dưới bất kỳ hình thức nào (mỗi
+        hình thức được gọi là “Nội Dung Gửi”), sẽ không được bảo mật bởi PiFood và có thể được
+        phổ biến hoặc sử dụng bởi PiFood hoặc các công ty liên kết mà không phải trả phí hoặc
+        chịu trách nhiệm với Người Sử Dụng, để phục vụ bất kỳ mục đích nào, bao gồm việc phát
+        triển, sản xuất và quảng bá sản phẩm. Khi thực hiện Nội Dung Gửi đến PiFood, bạn thừa
+        nhận và đồng ý rằng PiFood và/hoặc các bên thứ ba có thể độc lập phát triển các phần mềm,
+        ứng dụng, giao diện, sản phẩm và chỉnh sửa và nâng cấp các phần mềm, ứng dụng, giao diện,
+        sản phẩm mà chúng đồng nhất hoặc tương tự với các ý tưởng được nêu trong Nội Dung Gửi của
+        bạn về chức năng, mã hoặc các đặc tính khác. Vì vậy, bạn theo đây trao cho BiCorp và các
+        bên kế thừa của PiFood, một cách liên tục, không hủy ngang, mang tính toàn cầu, không độc
+        quyền, không tiền bản quyền, có thể cấp quyền lại và có thể chuyển giao, quyền sử dụng,
+        sao chép, phân phối, tái bản, chuyển giao, thay đổi, chỉnh sửa, tạo các sản phẩm phái sinh
+        từ, thể hiện công khai, và thực hiện Nội Dung Gửi đó, thông qua hoặc liên quan đến Nội
+        Dung Gửi dưới bất kỳ phương tiện truyền thông nào và thông qua bất kỳ kênh truyền thông
+        nào, bao gồm cho mục đích khuyến mãi hoặc phân phối lại một phần Dịch Vụ (hoặc các sản
+        phẩm phái sinh của Dịch Vụ). Điều khoản này không áp dụng đối với các thông tin cá nhân
+        là đối tượng của chính sách bảo mật của PiFood trừ khi bạn công khai những thông tin đó
+        trên hoặc thông qua Dịch Vụ.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<footer class="text-center text-lg-start text-muted">
+  <div class="container-sm d-flex justify-content-center justify-content-lg-between pt-4">
+    <div class="d-none d-lg-block d-md-block me-5 fs-4">
+
+    </div>
+
+    <div class="">
+      <a href="https://fb.me/ibakop2001" class="me-4 text-reset text-decoration-none">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset text-decoration-none">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset text-decoration-none">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset text-decoration-none">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset text-decoration-none">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset text-decoration-none">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            <svg class="bi me-2" width="16" height="16"><use xlink:href="/libs/bootstrap-icons-1.9.0/bootstrap-icons.svg#person-lines-fill"/></svg>BiFood Corp.
+          </h6>
+          <p class="footerTextSmol">
+            BiFood Corp. là 1 startup do học viên của Fpt Academy International lập nên, hướng tới sự sáng tạo trong thế kỉ mới.
+          </p>
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Tài khoản
+          </h6>
+          <p>
+            <a href="ui" class="text-reset text-decoration-none">Thông tin cá nhân</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Tích điểm</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Giỏ Hàng</a>
+          </p>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Hỗ trợ
+          </h6>
+          <p>
+            <a href="terms" class="text-reset text-decoration-none">Điều khoản và quy định</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Chính sách người dùng</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Hình thức thanh toán</a>
+          </p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i> Ton That Thuyet St, Hanoi, VN</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@fpt.edu.vn
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 84 912 FPT EDU</p>
+          <p><i class="fas fa-print me-3"></i> + 84 FAX FPT EDU</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <div class="text-center p-3" style="background-color: rgba(255,255,255,0.6);">
+    von mir aus © 2022,
+    <a class="text-reset fw-bold text-decoration-none" href="https://fb.me/ibakop2001">alles Liebe und Gute für Dich</a>
+  </div>
+</footer>
+</body>
