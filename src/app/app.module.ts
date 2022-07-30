@@ -83,7 +83,7 @@ const appRoutes: Routes = [
   {path: 'ui/contacts', redirectTo: 'contacts', pathMatch: 'full' },
   {path: 'ui/terms', redirectTo: 'terms', pathMatch: 'full' },
 
-  {path: 'terms', component:TermsComponent},
+  {path: 'terms', component:ClassroomComponent},
   {path: 'terms/ ', redirectTo: '', pathMatch: 'full' },//homepage
   {path: 'terms/signin', redirectTo: 'signin', pathMatch: 'full' },
   {path: 'terms/products', redirectTo: 'products', pathMatch: 'full' },
