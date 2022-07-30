@@ -1,6 +1,6 @@
 import {Component,} from "@angular/core";
 
-import {IExam} from "../interfaces/student.interface";
+import {IExam} from "../interfaces/exam1.interface";
 
 @Component({
   selector: 'app-exam1',
